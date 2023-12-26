@@ -1,0 +1,13 @@
+<table>
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Trainee</th>
+            <th>Task</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @yield('content')
+    </tbody>
+</table>
