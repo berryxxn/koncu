@@ -1,12 +1,10 @@
 ## Table of Contents
-1. [How to Contribute](#how-to-contribute)
-2. [Reporting Issues](#reporting-issues)
-3. [Proposing Changes](#proposing-changes)
-4. [Code Style Guidelines](#code-style-guidelines)
-5. [Commit Messages](#commit-messages)
-6. [Submitting a Pull Request](#submitting-a-pull-request)
-7. [Issues and Labels](#issues-and-labels)
-8. [License](#license)
+1. [Proposing Changes](#proposing-changes)
+2. [Code Style Guidelines](#code-style-guidelines)
+3. [Commit Messages](#commit-messages)
+4. [Submitting a Pull Request](#submitting-a-pull-request)
+5. [Issues and Labels](#issues-and-labels)
+6. [Guidelines](#guidelines)
 
 ### Proposing Changes
 If you'd like to propose changes or additions to the project:
@@ -63,7 +61,7 @@ When submitting a pull request:
 3. Ensure your branch is up-to-date with the main repository.
 
 ### Issues and Labels
-We use labels to categorize issues. Please apply the appropriate label when creating or triaging issues.
+Use labels to categorize issues. Please apply the appropriate label when creating or triaging issues.
 
 - `documentation`: Issues related to improving or clarifying existing documentation.
 - `enhancement`: Suggestions for enhancing the content or adding new guides.
@@ -74,3 +72,42 @@ We use labels to categorize issues. Please apply the appropriate label when crea
 - `clarification`: Requests for additional clarification on specific sections.
 - `discussion`: Open-ended discussions about potential improvements or changes.
 - `contribution-welcome`: Indicates that contributions on this issue are welcome.
+
+### Guidelines
+	Download git
+		-> Buka vscode, ke side bar bagian source control (logo 3 bulet sama garis)
+		-> Download 32/64 bit (kalo ragu, pilih 64 bit) windows setup (bukan portable)
+		-> Next semua sampe install
+		-> Re-open vscode
+		-> Gk ush launch gitbash/open release notes, langsung finish aja
+		-> Cek di side bar yang logo 3 bulet sama garis, pastiin nggk disuruh donwload git lagi
+
+	Pulling projects
+		-> Buka https://github.com/Mona-besar/Konsekuensi
+		-> Click fork
+		-> Nama fork bebas trus save
+		-> Buka new window VSCode
+		-> Click ctrl + shift + e
+		-> Click clone repository -> Clone from github -> pilih repo yg tadi baru kebuat dari fork
+		-> Download nodejs di nodejs.org/en versi LTS
+		-> Cek udh kedownload ato belom pake `npm --v`
+		-> Run di command console `composer update` buat download vendor
+		-> Copy `example.env`
+		-> Rename yg baru dicopy jadi `.env`
+		-> run `php artisan serve`
+		-> Kalo gk bisa DM T061
+	
+		General naming convention
+		DATABASE -> SELECT * FROM
+		Class -> PascalCasing, AkuMakanNasi
+		function/variable -> camelCase, akuMakanNasi
+		khusus HTML CSS, aku-makan-nasi
+
+	Create pull request
+		-> Di file kalian kerja, di paling atas banget, taro comment, file ini ngapain aja, dan apa aja yg perlu kita tahu
+		-> PASTIIN KODE KALIAN UDH PALING UP TO DATE SAMA REPO MASTER
+		-> PASTIIN GADA ERROR DAN JALAN SAMA KODE ORANG LAIN
+		-> Kalo udah yakin semuanya jadi, click contribute di page utama repo kalian (yang difork)
+		-> Click open new pull request ato apa gitu
+		-> Tunggu diaccept sama master
+		-> Tidur
